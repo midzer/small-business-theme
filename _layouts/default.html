@@ -7,19 +7,21 @@
 
     {% include header.html %}
 
-    <!-- <div class="page-content">div class="home" -->
-    <!--    <div class="wrapper"> -->
-        {{ content }}
-    <!--    </div> -->
-    <!--</div> -->
-
-    {% include footer.html %}
+    <div class="container">
     
-  <!-- Bootstrap core JavaScript
-  =============================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-  </body>
+      {{ content }}
+      
+      <hr>
 
+      {% include footer.html %}
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Bootstrap core JavaScript
+    =============================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    </body>
 </html>
